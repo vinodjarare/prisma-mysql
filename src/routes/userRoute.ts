@@ -19,7 +19,7 @@ router
   .route("/user")
   .put(isAuthenticated, updateUser)
   .delete(isAuthenticated, deleteUser)
-  .put(isAuthenticated, updatePassword);
+  .patch(isAuthenticated, updatePassword);
 router.route("/users").get(getAllUser);
 
 export default router;
